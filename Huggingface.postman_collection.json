@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "f0668844-2aaf-4933-97eb-a7d898710ec5",
+		"name": "Huggingface",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38001366",
+		"_collection_link": "https://consrcio-dos-vingadores.postman.co/workspace/My-Workspace~bb18501b-5cde-4ab1-8fee-f733052923d1/collection/38001366-f0668844-2aaf-4933-97eb-a7d898710ec5?action=share&source=collection_link&creator=38001366"
+	},
+	"item": [
+		{
+			"name": "Pergunta Hugging",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{vault:google-api-key}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"contents\": [\r\n    {\r\n      \"parts\": [\r\n        {\r\n          \"text\": \"Explique o que é inteligência artificial de forma simples.\"\r\n        }\r\n      ]\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCSK5VK9CiQgKbm7O1aKZ8NGmxIdeMR8wg",
+					"protocol": "https",
+					"host": [
+						"generativelanguage",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v1beta",
+						"models",
+						"gemini-pro:generateContent"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyCSK5VK9CiQgKbm7O1aKZ8NGmxIdeMR8wg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
