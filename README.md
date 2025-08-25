@@ -14,8 +14,5 @@ Este repositório contém os documentos e artefatos de teste que foram desenvolv
 * **TDD** - Test Driven Development ou Desenvolvimento Guiado por Testes
 
 ## Conteúdo do Repositório
-
-* **`Tabela de Testes.xlsx`**: Planilha detalhada com os casos de teste e suas descrições.
 * **`ServeRest_API_Tests.postman_collection.json`**: Coleção de requisições e testes de API para a plataforma Postman.
-* **`Gráfico.png`**: Representação visual do progresso dos testes.
-* **`Resumo AWS Q Business.txt`**: Resumo de conceitos e aprendizados sobre a ferramenta AWS Q Business.
+* **`Resumo AWS Q Business.txt`**: Resumo de conceitos e aprendizados sobre a ferramenta AWS Q Business. (FUTURO)
