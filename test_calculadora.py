@@ -13,3 +13,8 @@ def test_somar(calc):
 def test_subtrair(calc):
     resultado = calc.subtrair(2,1)
     assert resultado == 1
+    
+
+def test_dividir(calc):
+    resultado = calc.dividir(10,2)
+    assert resultado == 5
