@@ -23,3 +23,8 @@ def test_dividir(calc):
 def test_multiplicar(calc):
     resultado = calc.multiplicar(2,1)
     assert resultado == 2
+
+
+def test_menu(calc):
+    resultado = calc.menu(1)
+    assert resultado == calc.somar(3,2)
