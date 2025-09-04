@@ -5,6 +5,14 @@ from calculadora import Calculadora
 def calc():
     return Calculadora()
 
+@pytest.mark.parametrize("escolha,primeiro_valor,segundo_valor,esperado",
+     [(1,1,1,2)])
+
+def test_menu(escolha,primeiro_valor,segundo_valor, esperado):
+    calc = Calculadora()
+    resultado = calc.menu(escolha,primeiro_valor, segundo_valor)
+    assert resultado == esperado
+
 def test_somar(calc):
     resultado = calc.somar(1,1)
     assert resultado == 2
@@ -25,6 +33,4 @@ def test_multiplicar(calc):
     assert resultado == 2
 
 
-def test_menu(calc):
-    resultado = calc.menu(1)
-    assert resultado == calc.somar(3,2)
+    

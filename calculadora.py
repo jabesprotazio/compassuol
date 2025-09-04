@@ -1,5 +1,14 @@
 class Calculadora:
 
+    def menu(self, escolha, primeiro_valor, segundo_valor):
+        print("Bem vindo a Calculadora Python: \n Escolha uma das opções: ")
+        print("1- Somar \n 2- Subtrair \n 3- Multiplicar \n 4- Dividir")
+
+        match escolha:
+            case 1:
+                return self.somar(primeiro_valor,segundo_valor)
+
+
 
     def somar(self,numero1,numero2):
         resultado = numero1 + numero2 
@@ -19,3 +28,4 @@ class Calculadora:
 
     def multiplicar(self, numero1, numero2):
         return numero1 * numero2
+    
