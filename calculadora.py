@@ -10,6 +10,8 @@ class Calculadora:
         return numero1 - numero2
     
     
-    #def dividir(self, numero1, numero2):
+    def dividir(self, numero1, numero2):
         if numero2 == 0:
-            return None, "O "#
+            return None, "O denominador precisa ser diferente de 0."
+        else:
+            return numero1 / numero2
