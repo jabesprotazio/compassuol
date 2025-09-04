@@ -15,3 +15,7 @@ class Calculadora:
             return None, "O denominador precisa ser diferente de 0."
         else:
             return numero1 / numero2
+        
+
+    def multiplicar(self, numero1, numero2):
+        return numero1 * numero2
