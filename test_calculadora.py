@@ -18,3 +18,8 @@ def test_subtrair(calc):
 def test_dividir(calc):
     resultado = calc.dividir(10,2)
     assert resultado == 5
+
+
+def test_multiplicar(calc):
+    resultado = calc.multiplicar(2,1)
+    assert resultado == 2
