@@ -8,6 +8,14 @@ class Calculadora:
             case 1:
                 return self.somar(primeiro_valor,segundo_valor)
 
+            case 2:
+                return self.subtrair(primeiro_valor,segundo_valor)
+            
+            case 3:
+                return self.multiplicar(primeiro_valor,segundo_valor)
+            
+            case 4:
+                return self.dividir(primeiro_valor, segundo_valor)
 
 
     def somar(self,numero1,numero2):
@@ -16,16 +24,19 @@ class Calculadora:
     
 
     def subtrair(self, numero1, numero2):
-        return numero1 - numero2
+        resultado = numero1 - numero2
+        return resultado
     
     
     def dividir(self, numero1, numero2):
         if numero2 == 0:
             return None, "O denominador precisa ser diferente de 0."
         else:
-            return numero1 / numero2
+            resultado = numero1 / numero2
+            return resultado
         
 
     def multiplicar(self, numero1, numero2):
-        return numero1 * numero2
+        resultado = numero1 * numero2
+        return resultado
     

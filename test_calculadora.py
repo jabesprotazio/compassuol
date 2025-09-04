@@ -6,12 +6,17 @@ def calc():
     return Calculadora()
 
 @pytest.mark.parametrize("escolha,primeiro_valor,segundo_valor,esperado",
-     [(1,1,1,2)])
+     [(1,1,1,2),
+     (2,5,2,3),
+     (3,3,3,9),
+     (4,2,2,1)])
 
-def test_menu(escolha,primeiro_valor,segundo_valor, esperado):
-    calc = Calculadora()
+def test_menu(calc,escolha,primeiro_valor,segundo_valor, esperado):
     resultado = calc.menu(escolha,primeiro_valor, segundo_valor)
     assert resultado == esperado
+
+
+
 
 def test_somar(calc):
     resultado = calc.somar(1,1)
