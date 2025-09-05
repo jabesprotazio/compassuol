@@ -7,7 +7,7 @@ def fato():
 
 @pytest.mark.parametrize("n, esperado",[
     (4,24),
-    (0,"Tente um número maior que 0"),
+    (0,1),
     (1, 1),
     (-2,"Tente um número positivo!")
 ])
