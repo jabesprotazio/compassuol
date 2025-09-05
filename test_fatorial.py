@@ -16,3 +16,4 @@ def test_fatorial(fato,n,esperado):
     resultado = fato.fatorial(n)
     assert resultado == esperado
 
+    
