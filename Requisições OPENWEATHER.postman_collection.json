@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "7a7dd609-90ff-4d03-bc5a-de02e26422cc",
+		"name": "Requisições OPENWEATHER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38001366",
+		"_collection_link": "https://consrcio-dos-vingadores.postman.co/workspace/My-Workspace~bb18501b-5cde-4ab1-8fee-f733052923d1/collection/38001366-7a7dd609-90ff-4d03-bc5a-de02e26422cc?action=share&source=collection_link&creator=38001366"
+	},
+	"item": [
+		{
+			"name": "GET_Weather_City_London",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?q={{cidade_lista}}&appid=a30cb4b11beec13e1e359abfe4be71d0",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "{{cidade_lista}}"
+						},
+						{
+							"key": "appid",
+							"value": "a30cb4b11beec13e1e359abfe4be71d0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "cidade_lista",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
