@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "3c656873-d954-46fc-9eb5-3730a559f803",
+		"name": "Go REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38001366",
+		"_collection_link": "https://consrcio-dos-vingadores.postman.co/workspace/My-Workspace~bb18501b-5cde-4ab1-8fee-f733052923d1/collection/38001366-3c656873-d954-46fc-9eb5-3730a559f803?action=share&source=collection_link&creator=38001366"
+	},
+	"item": [
+		{
+			"name": "Create a new user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"James Cartem\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"teste@hotmail.com\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a227079a6521fa943d47c89095eecb54d81d958d670f8e3b52442f4c25b4fcc2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/8075242",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8075242"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a227079a6521fa943d47c89095eecb54d81d958d670f8e3b52442f4c25b4fcc2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"James Cartem Washington Brasileiro\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"teste007@hotmail.com\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/8075242",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8075242"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "a227079a6521fa943d47c89095eecb54d81d958d670f8e3b52442f4c25b4fcc2",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"James Cartem Washington\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"teste007@hotmail.com\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/8075242",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"8075242"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "a227079a6521fa943d47c89095eecb54d81d958d670f8e3b52442f4c25b4fcc2",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
