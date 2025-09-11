@@ -40,3 +40,4 @@ def test_atualizar_cliente(db_manager):
     cliente.nome = "James Editado"
     result = db_manager.atualizar_cliente(id_cliente, "nome", "James Editado")
     assert result == "ID inválido ou inexistente."
+    
