@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-12T22:36:00.059264" rpa="false" schemaversion="5">
+<suite id="s1" name="TesteBlogTest" source="C:\Users\James\RobotFramework\QArentenaBlogTest\TesteBlogTest.robot">
+<test id="s1-t1" name="Caso de Teste 01: Pesquisar um post" line="6">
+<kw name="Acessar a página do blog" owner="ResourceBlogTest">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-12T22:36:00.410096" level="INFO">Opening browser 'googlechrome' to base url 'https://robotizandotestes.blogspot.com/'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-12T22:36:00.409716" elapsed="4.768510"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-12T22:36:05.188788" level="INFO">Page title is 'Robotizando Testes'.</msg>
+<arg>Robotizando Testes</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-12T22:36:05.178673" elapsed="0.010293"/>
+</kw>
+<status status="PASS" start="2025-09-12T22:36:00.408289" elapsed="4.780821"/>
+</kw>
+<kw name="Pesquisar por um post com &quot;Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04&quot;" owner="ResourceBlogTest" source_name="Pesquisar por um post com &quot;${TEXTO_PESQUISA}&quot;">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${BTN_PESQUISAR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-12T22:36:05.190113" elapsed="0.311470"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-12T22:36:05.502364" level="INFO">Clicking button 'css=button.search-expand.touch-icon-button'.</msg>
+<arg>${BTN_PESQUISAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T22:36:05.501873" elapsed="0.091293"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-12T22:36:05.594410" level="INFO">Typing text 'Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04' into text field 'name=q'.</msg>
+<arg>${FIELD_PESQUISAR}</arg>
+<arg>${TEXTO_PESQUISA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T22:36:05.593691" elapsed="0.279742"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-12T22:36:05.873991" level="INFO">Clicking element 'css=input.search-action.flat-button'.</msg>
+<arg>${SUBMIT_PESQUISAR_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T22:36:05.873691" elapsed="1.420556"/>
+</kw>
+<status status="PASS" start="2025-09-12T22:36:05.189729" elapsed="2.104671"/>
+</kw>
+<kw name="Conferir mensagem de pesquisa por &quot;Mostrando postagens que correspondem à pesquisa por Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04&quot;" owner="ResourceBlogTest" source_name="Conferir mensagem de pesquisa por &quot;${MSG_ESPERADA}&quot;">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-09-12T22:36:07.320983" level="INFO">Current page contains text 'Mostrando postagens que correspondem à pesquisa por Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04'.</msg>
+<arg>${MSG_ESPERADA}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-09-12T22:36:07.295504" elapsed="0.025590"/>
+</kw>
+<status status="PASS" start="2025-09-12T22:36:07.294989" elapsed="0.026216"/>
+</kw>
+<kw name="Fechar Navegador" owner="ResourceBlogTest">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-12T22:36:07.322171" elapsed="2.261950"/>
+</kw>
+<status status="PASS" start="2025-09-12T22:36:07.321668" elapsed="2.262796"/>
+</kw>
+<status status="PASS" start="2025-09-12T22:36:00.406905" elapsed="9.178563"/>
+</test>
+<status status="PASS" start="2025-09-12T22:36:00.061057" elapsed="9.527289"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TesteBlogTest" id="s1" pass="1" fail="0" skip="0">TesteBlogTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
