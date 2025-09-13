@@ -25,6 +25,5 @@ Pesquisar por um post com "${TEXTO_PESQUISA}"
 Conferir mensagem de pesquisa por "${MSG_ESPERADA}"
     Page Should Contain    ${MSG_ESPERADA}
 
-
 Fechar Navegador
     Close Browser
