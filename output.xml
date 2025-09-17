@@ -1,163 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-14T16:52:22.302852" rpa="false" schemaversion="5">
-<suite id="s1" name="TesteBlogTest" source="C:\Users\James\RobotFramework\QArentenaBlogTest\TesteBlogTest.robot">
-<test id="s1-t1" name="Caso de Teste 01: Pesquisar um post" line="5">
-<kw name="Acessar a página do blog" owner="ResourceBlogTest">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-17T14:16:08.235575" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes" source="C:\CursoUdemy\robotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="10">
+<kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:22.781767" level="INFO">Opening browser 'googlechrome' to base url 'https://robotizandotestes.blogspot.com/'.</msg>
-<arg>url=${URL}</arg>
-<arg>browser=${BROWSER}</arg>
+<msg time="2025-09-17T14:16:08.713508" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-14T16:52:22.781387" elapsed="4.922553"/>
+<status status="PASS" start="2025-09-17T14:16:08.713205" elapsed="2.510735"/>
 </kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:27.722025" level="INFO">Page title is 'Robotizando Testes'.</msg>
-<arg>Robotizando Testes</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-09-14T16:52:27.704585" elapsed="0.018208"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-17T14:16:11.224851" elapsed="0.315396"/>
 </kw>
-<status status="PASS" start="2025-09-14T16:52:22.780568" elapsed="4.942539"/>
+<status status="PASS" start="2025-09-17T14:16:08.712215" elapsed="2.828519"/>
 </kw>
-<kw name="Pesquisar por um post" owner="ResourceBlogTest">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=${BTN_PESQUISAR}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-14T16:52:27.724615" elapsed="0.033864"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:27.759143" level="INFO">Clicking button 'css=button.search-expand.touch-icon-button'.</msg>
-<arg>${BTN_PESQUISAR}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:52:27.758744" elapsed="0.103677"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:27.862993" level="INFO">Typing text 'Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04' into text field 'name=q'.</msg>
-<arg>${FIELD_PESQUISAR}</arg>
-<arg>${TEXTO_PESQUISA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:52:27.862680" elapsed="0.514892"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:28.378067" level="INFO">Clicking element 'css=input.search-action.flat-button'.</msg>
-<arg>${SUBMIT_PESQUISAR_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:52:28.377804" elapsed="0.073428"/>
-</kw>
-<arg>Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04</arg>
-<status status="PASS" start="2025-09-14T16:52:27.723896" elapsed="0.727473"/>
-</kw>
-<kw name="Conferir mensagem de pesquisa por" owner="ResourceBlogTest">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:29.309926" level="INFO">Current page contains text 'Mostrando postagens que correspondem à pesquisa por Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04'.</msg>
-<arg>${MSG_ESPERADA}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-09-14T16:52:28.452853" elapsed="0.857190"/>
-</kw>
-<arg>Mostrando postagens que correspondem à pesquisa por Season Mobile com Appium - Ep.02: Instalação e Setup Appium + Android Studio no Ubuntu 20.04</arg>
-<status status="PASS" start="2025-09-14T16:52:28.451827" elapsed="0.858322"/>
-</kw>
-<kw name="Fechar Navegador" owner="ResourceBlogTest">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-14T16:52:29.310844" elapsed="2.261617"/>
-</kw>
-<status status="PASS" start="2025-09-14T16:52:29.310546" elapsed="2.262103"/>
-</kw>
-<status status="PASS" start="2025-09-14T16:52:22.779115" elapsed="8.793980"/>
-</test>
-<test id="s1-t2" name="Caso de Teste 02: Ler um post" line="11">
-<kw name="Acessar a página do blog" owner="ResourceBlogTest">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:31.575311" level="INFO">Opening browser 'googlechrome' to base url 'https://robotizandotestes.blogspot.com/'.</msg>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-09-17T14:16:11.558772" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
 <arg>url=${URL}</arg>
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-09-14T16:52:31.574981" elapsed="4.193996"/>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-09-17T14:16:11.557790" elapsed="1.029174"/>
 </kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:35.791780" level="INFO">Page title is 'Robotizando Testes'.</msg>
-<arg>Robotizando Testes</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2025-09-14T16:52:35.770001" elapsed="0.021946"/>
-</kw>
-<status status="PASS" start="2025-09-14T16:52:31.574535" elapsed="4.217591"/>
-</kw>
-<kw name="Acessar o post" owner="ResourceBlogTest">
-<kw name="Pesquisar por um post" owner="ResourceBlogTest">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=${BTN_PESQUISAR}</arg>
+<arg>${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-14T16:52:35.795008" elapsed="0.051759"/>
+<status status="PASS" start="2025-09-17T14:16:12.587512" elapsed="7.056734"/>
 </kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:35.847428" level="INFO">Clicking button 'css=button.search-expand.touch-icon-button'.</msg>
-<arg>${BTN_PESQUISAR}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:52:35.847073" elapsed="0.284319"/>
+<status status="PASS" start="2025-09-17T14:16:11.556165" elapsed="8.088290"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:36.132453" level="INFO">Typing text 'Season Premiere: Introdução ao Robot Framework' into text field 'name=q'.</msg>
-<arg>${FIELD_PESQUISAR}</arg>
-<arg>${TEXTO_PESQUISA}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:52:36.131761" elapsed="1.615399"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:37.748859" level="INFO">Clicking element 'css=input.search-action.flat-button'.</msg>
-<arg>${SUBMIT_PESQUISAR_BTN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-09-14T16:52:37.747904" elapsed="1.425384"/>
-</kw>
-<arg>${TEXTO_PESQUISA}</arg>
-<status status="PASS" start="2025-09-14T16:52:35.793407" elapsed="3.380218"/>
-</kw>
-<arg>Season Premiere: Introdução ao Robot Framework</arg>
-<status status="PASS" start="2025-09-14T16:52:35.792639" elapsed="3.381206"/>
-</kw>
-<kw name="Conferir se a imagem do robô aparece" owner="ResourceBlogTest">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=${IMG_ROBO}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-09-14T16:52:39.180040" elapsed="0.147563"/>
-</kw>
-<kw name="Page Should Contain Image" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:39.390685" level="INFO">Current page contains image 'css=div.snippet-thumbnail img'.</msg>
-<arg>${IMG_ROBO}</arg>
-<doc>Verifies image identified by ``locator`` is found from current page.</doc>
-<status status="PASS" start="2025-09-14T16:52:39.328059" elapsed="0.062822"/>
-</kw>
-<status status="PASS" start="2025-09-14T16:52:39.178180" elapsed="0.212911"/>
-</kw>
-<kw name="Conferir se o texto aparece" owner="ResourceBlogTest">
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-09-14T16:52:39.431044" level="INFO">Current page contains text 'Robot Framework'.</msg>
-<arg>${TEXTO_DESEJADO}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-09-14T16:52:39.392797" elapsed="0.038398"/>
-</kw>
-<arg>Robot Framework</arg>
-<status status="PASS" start="2025-09-14T16:52:39.391776" elapsed="0.039565"/>
-</kw>
-<kw name="Fechar Navegador" owner="ResourceBlogTest">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-09-14T16:52:39.432847" elapsed="2.781376"/>
-</kw>
-<status status="PASS" start="2025-09-14T16:52:39.431996" elapsed="2.782780"/>
-</kw>
-<status status="PASS" start="2025-09-14T16:52:31.573877" elapsed="10.644461"/>
+<doc>Esse teste verifica o menu "Eletrônicos" do site Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="PASS" start="2025-09-17T14:16:08.710442" elapsed="10.934485"/>
 </test>
-<status status="PASS" start="2025-09-14T16:52:22.308191" elapsed="19.911870"/>
+<doc>Essa suite testa o site da Amazon.com.br</doc>
+<status status="PASS" start="2025-09-17T14:16:08.237459" elapsed="11.408721"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">categorias</stat>
+<stat pass="1" fail="0" skip="0">menus</stat>
 </tag>
 <suite>
-<stat name="TesteBlogTest" id="s1" pass="2" fail="0" skip="0">TesteBlogTest</stat>
+<stat name="Amazon Testes" id="s1" pass="1" fail="0" skip="0">Amazon Testes</stat>
 </suite>
 </statistics>
 <errors>
