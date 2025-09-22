@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-22T15:32:33.654814" rpa="false" schemaversion="5">
+<suite id="s1" name="Tarefa3" source="C:\Users\James\RobotFramework\QArentenaBlogTest\tarefa3.robot">
+<test id="s1-t1" name="Caso de teste para imprimir" line="11">
+<kw name="Imprimindo conforme solicitado">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[0]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.685212" elapsed="0.000700"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[1]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.686069" elapsed="0.000613"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[2]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.686800" elapsed="0.000565"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[3]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.687476" elapsed="0.000563"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[4]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.688149" elapsed="0.000584"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[5]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.688847" elapsed="0.000635"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[6]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.689619" elapsed="0.000684"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[7]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.690523" elapsed="0.000899"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[8]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.691595" elapsed="0.000790"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[9]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.692667" elapsed="0.000813"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[10]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.693626" elapsed="0.000606"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${MESES[11]}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-22T15:32:33.694361" elapsed="0.000546"/>
+</kw>
+<status status="PASS" start="2025-09-22T15:32:33.684722" elapsed="0.010265"/>
+</kw>
+<status status="PASS" start="2025-09-22T15:32:33.683879" elapsed="0.011370"/>
+</test>
+<status status="PASS" start="2025-09-22T15:32:33.656250" elapsed="0.039805"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tarefa3" id="s1" pass="1" fail="0" skip="0">Tarefa3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
