@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-22T15:32:33.654814" rpa="false" schemaversion="5">
-<suite id="s1" name="Tarefa3" source="C:\Users\James\RobotFramework\QArentenaBlogTest\tarefa3.robot">
-<test id="s1-t1" name="Caso de teste para imprimir" line="11">
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-22T16:10:38.139493" rpa="false" schemaversion="5">
+<suite id="s1" name="Tarefa4" source="C:\Users\James\RobotFramework\QArentenaBlogTest\tarefa4.robot">
+<test id="s1-t1" name="Caso de teste para imprimir" line="10">
 <kw name="Imprimindo conforme solicitado">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[0]}</arg>
+<arg>O mês de Janeiro corresponde a ${MESES.Janeiro}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.685212" elapsed="0.000700"/>
+<status status="PASS" start="2025-09-22T16:10:38.173135" elapsed="0.000597"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[1]}</arg>
+<arg>O mês de Fevereiro corresponde a ${MESES.Fevereiro}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.686069" elapsed="0.000613"/>
+<status status="PASS" start="2025-09-22T16:10:38.173874" elapsed="0.000482"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[2]}</arg>
+<arg>O mês de Março corresponde a ${MESES.Março}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.686800" elapsed="0.000565"/>
+<status status="PASS" start="2025-09-22T16:10:38.174459" elapsed="0.000432"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[3]}</arg>
+<arg>O mês de Abril corresponde a ${MESES.Abril}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.687476" elapsed="0.000563"/>
+<status status="PASS" start="2025-09-22T16:10:38.174987" elapsed="0.000438"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[4]}</arg>
+<arg>O mês de Maio corresponde a ${MESES.Maio}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.688149" elapsed="0.000584"/>
+<status status="PASS" start="2025-09-22T16:10:38.175527" elapsed="0.000447"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[5]}</arg>
+<arg>O mês de Junho corresponde a ${MESES.Junho}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.688847" elapsed="0.000635"/>
+<status status="PASS" start="2025-09-22T16:10:38.176082" elapsed="0.000470"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[6]}</arg>
+<arg>O mês de Julho corresponde a ${MESES.Julho}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.689619" elapsed="0.000684"/>
+<status status="PASS" start="2025-09-22T16:10:38.176647" elapsed="0.000489"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[7]}</arg>
+<arg>O mês de Agosto corresponde a ${MESES.Agosto}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.690523" elapsed="0.000899"/>
+<status status="PASS" start="2025-09-22T16:10:38.177253" elapsed="0.000538"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[8]}</arg>
+<arg>O mês de Setembro corresponde a ${MESES.Setembro}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.691595" elapsed="0.000790"/>
+<status status="PASS" start="2025-09-22T16:10:38.177941" elapsed="0.000512"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[9]}</arg>
+<arg>O mês de Outubro corresponde a ${MESES.Outubro}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.692667" elapsed="0.000813"/>
+<status status="PASS" start="2025-09-22T16:10:38.178566" elapsed="0.000523"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[10]}</arg>
+<arg>O mês de Novembro corresponde a ${MESES.Novembro}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.693626" elapsed="0.000606"/>
+<status status="PASS" start="2025-09-22T16:10:38.179198" elapsed="0.000433"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${MESES[11]}</arg>
+<arg>O mês de Dezembro corresponde a ${MESES.Dezembro}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T15:32:33.694361" elapsed="0.000546"/>
+<status status="PASS" start="2025-09-22T16:10:38.179738" elapsed="0.000465"/>
 </kw>
-<status status="PASS" start="2025-09-22T15:32:33.684722" elapsed="0.010265"/>
+<status status="PASS" start="2025-09-22T16:10:38.172636" elapsed="0.007646"/>
 </kw>
-<status status="PASS" start="2025-09-22T15:32:33.683879" elapsed="0.011370"/>
+<status status="PASS" start="2025-09-22T16:10:38.171829" elapsed="0.008713"/>
 </test>
-<status status="PASS" start="2025-09-22T15:32:33.656250" elapsed="0.039805"/>
+<status status="PASS" start="2025-09-22T16:10:38.141025" elapsed="0.040192"/>
 </suite>
 <statistics>
 <total>
@@ -76,7 +76,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Tarefa3" id="s1" pass="1" fail="0" skip="0">Tarefa3</stat>
+<stat name="Tarefa4" id="s1" pass="1" fail="0" skip="0">Tarefa4</stat>
 </suite>
 </statistics>
 <errors>
