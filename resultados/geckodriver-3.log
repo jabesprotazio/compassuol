@@ -1,0 +1,27 @@
+1758219511621	geckodriver	INFO	Listening on 127.0.0.1:59617
+1758219514673	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59618" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\James\\AppData\\Local\\Temp\\rust_mozprofilelgMuGC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1758219515163	Marionette	INFO	Marionette enabled
+1758219515308	Marionette	INFO	Listening on port 55568
+WebDriver BiDi listening on ws://127.0.0.1:59618
+Read port: 55568
+1758219515476	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.amazon.com.br/, line 4043: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Child 32076, MediaDecoderStateMachine #1] WARNING: Decoder=289aa0d0400 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachine.cpp:372
+[Child 32076, MediaDecoderStateMachine #1] WARNING: Decoder=289aa0d0400 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer __cdecl mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /builds/worker/checkouts/gecko/dom/media/MediaDecoderStateMachineBase.cpp:168
+JavaScript warning: https://m.media-amazon.com/images/I/A1zG+6fI3qL.js, line 11: Script terminated by timeout at:
+clearEvents@https://m.media-amazon.com/images/I/A1zG+6fI3qL.js:11:66839
+sendBeaconEvents@https://m.media-amazon.com/images/I/A1zG+6fI3qL.js:11:66616
+prepareSendEvents/<@https://m.media-amazon.com/images/I/A1zG+6fI3qL.js:11:62312
+
+JavaScript warning: https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics, line 5740: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1758219524064	Marionette	INFO	Stopped listening on port 55568
+Dynamically enable window occlusion 1
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 105: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 102: Error: Unknown callback
