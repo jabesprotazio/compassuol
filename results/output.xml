@@ -1,73 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-22T16:10:38.139493" rpa="false" schemaversion="5">
-<suite id="s1" name="Tarefa4" source="C:\Users\James\RobotFramework\QArentenaBlogTest\tarefa4.robot">
-<test id="s1-t1" name="Caso de teste para imprimir" line="10">
-<kw name="Imprimindo conforme solicitado">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Janeiro corresponde a ${MESES.Janeiro}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.173135" elapsed="0.000597"/>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-23T16:57:21.782097" rpa="false" schemaversion="5">
+<suite id="s1" name="Tarefa5" source="C:\Users\James\RobotFramework\QArentenaBlogTest\tarefa5.robot">
+<test id="s1-t1" name="Caso de teste de exemplo 01" line="9">
+<kw name="Uma keyword para customizar um email">
+<kw name="Generate Random String" owner="String">
+<msg time="2025-09-23T16:57:21.837588" level="INFO">${STRING_RANDOM} = oytc1bq9</msg>
+<var>${STRING_RANDOM}</var>
+<arg>8</arg>
+<arg>[LOWER][NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2025-09-23T16:57:21.837265" elapsed="0.000364"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Fevereiro corresponde a ${MESES.Fevereiro}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.173874" elapsed="0.000482"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-09-23T16:57:21.838021" level="INFO">${EMAIL} = James.Silva.oytc1bq9@testerobot.com</msg>
+<var>${EMAIL}</var>
+<arg>${NOME}.${SOBRENOME}.${STRING_RANDOM}@testerobot.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-09-23T16:57:21.837784" elapsed="0.000280"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Março corresponde a ${MESES.Março}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.174459" elapsed="0.000432"/>
+<return>
+<value>${EMAIL}</value>
+<status status="PASS" start="2025-09-23T16:57:21.838130" elapsed="0.000046"/>
+</return>
+<msg time="2025-09-23T16:57:21.838321" level="INFO">${EMAIL_GERADO} = James.Silva.oytc1bq9@testerobot.com</msg>
+<var>${EMAIL_GERADO}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.sobrenome}</arg>
+<status status="PASS" start="2025-09-23T16:57:21.835987" elapsed="0.002361"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Abril corresponde a ${MESES.Abril}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.174987" elapsed="0.000438"/>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-23T16:57:21.838826" level="INFO">Email gerado: James.Silva.oytc1bq9@testerobot.com</msg>
+<arg>Email gerado: ${EMAIL_GERADO}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-23T16:57:21.838673" elapsed="0.000202"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Maio corresponde a ${MESES.Maio}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.175527" elapsed="0.000447"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Junho corresponde a ${MESES.Junho}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.176082" elapsed="0.000470"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Julho corresponde a ${MESES.Julho}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.176647" elapsed="0.000489"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Agosto corresponde a ${MESES.Agosto}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.177253" elapsed="0.000538"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Setembro corresponde a ${MESES.Setembro}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.177941" elapsed="0.000512"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Outubro corresponde a ${MESES.Outubro}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.178566" elapsed="0.000523"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Novembro corresponde a ${MESES.Novembro}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.179198" elapsed="0.000433"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>O mês de Dezembro corresponde a ${MESES.Dezembro}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-09-22T16:10:38.179738" elapsed="0.000465"/>
-</kw>
-<status status="PASS" start="2025-09-22T16:10:38.172636" elapsed="0.007646"/>
-</kw>
-<status status="PASS" start="2025-09-22T16:10:38.171829" elapsed="0.008713"/>
+<status status="PASS" start="2025-09-23T16:57:21.835089" elapsed="0.004125"/>
 </test>
-<status status="PASS" start="2025-09-22T16:10:38.141025" elapsed="0.040192"/>
+<doc>keyword para produzir um email customizado</doc>
+<status status="PASS" start="2025-09-23T16:57:21.784073" elapsed="0.056505"/>
 </suite>
 <statistics>
 <total>
@@ -76,9 +46,10 @@
 <tag>
 </tag>
 <suite>
-<stat name="Tarefa4" id="s1" pass="1" fail="0" skip="0">Tarefa4</stat>
+<stat name="Tarefa5" id="s1" pass="1" fail="0" skip="0">Tarefa5</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-09-23T16:57:21.778071" level="WARN">Error in file 'C:\Users\James\RobotFramework\QArentenaBlogTest\tarefa5.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
