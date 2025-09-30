@@ -2,10 +2,7 @@
 *** Settings ***
 Documentation   Arquivos simples para requisições HTTP em API ServeRest 
 Library         RequestsLibrary
-
-
-#Sessão para variáveis para utilização
-*** Variables ***
+Resource        ./usuarios_keywords.robot
 
 
 
@@ -16,7 +13,7 @@ Cenario: GET Todos os Usuarios 200
     Criar Sessao 
     GET Endpoint/usuarios
     # Validar Status Code  200
-    Validar Quantidade  ${187}
+    Validar Quantidade  ${219}
     # Printar Conteudo Response
 
 Cenario: POST Cadastrar Usuario 201
@@ -49,7 +46,7 @@ GET Endpoint /usuarios
 
 
 POST Endpoint /usuarios
-    &{payload}          Create Dictionary    nome=jabgkjghk  email=jabhghgk@gmail.com   password=123    administrador=true
+    &{payload}          Create Dictionary    nome={nome_do_usuario}  email={email_do_usuario}   password=123    administrador=true
     ${response}         POST On Session    ServeRest    /usuarios    data=&{payload}
     Log To Console      Response: ${response.content}
     Set Global Variable     ${response}
