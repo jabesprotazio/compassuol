@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-30T11:30:16.043508" rpa="false" schemaversion="5">
+<suite id="s1" name="Base" source="C:\Users\James\TrilhaRobotFramework\base.robot">
+<test id="s1-t1" name="Cenario: POST Cadastrar Usuario 201" line="22">
+<kw name="Criar Sessao">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-09-30T11:30:16.179471" level="INFO">Creating Session using : alias=ServeRest, url=http://localhost:3000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>ServeRest</arg>
+<arg>http://localhost:3000</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-09-30T11:30:16.179311" elapsed="0.000409"/>
+</kw>
+<status status="PASS" start="2025-09-30T11:30:16.178755" elapsed="0.001073"/>
+</kw>
+<kw name="POST Endpoint /usuarios">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-30T11:30:16.180883" level="INFO">&amp;{payload} = { nome=ja | email=ja@gmail.com | password=123 | administrador=true }</msg>
+<var>&amp;{payload}</var>
+<arg>nome=ja</arg>
+<arg>email=ja@gmail.com</arg>
+<arg>password=123</arg>
+<arg>administrador=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-30T11:30:16.180476" elapsed="0.000467"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-09-30T11:30:16.197330" level="INFO">POST Request : url=http://localhost:3000/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '60', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=nome=ja&amp;email=ja%40gmail.com&amp;password=123&amp;administrador=true 
+ </msg>
+<msg time="2025-09-30T11:30:16.197460" level="INFO">POST Response : url=http://localhost:3000/usuarios 
+ status=201, reason=Created 
+ headers={'Access-Control-Allow-Origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '82', 'Date': 'Tue, 30 Sep 2025 14:30:16 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=5'} 
+ body={
+    "message": "Cadastro realizado com sucesso",
+    "_id": "N0D5ivL8fktO0iy6"
+} 
+ </msg>
+<msg time="2025-09-30T11:30:16.197819" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>ServeRest</arg>
+<arg>/usuarios</arg>
+<arg>data=&amp;{payload}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-09-30T11:30:16.181081" elapsed="0.016812"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-30T11:30:16.198253" elapsed="0.001839"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-30T11:30:16.200515" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-30T11:30:16.200255" elapsed="0.000331"/>
+</kw>
+<status status="PASS" start="2025-09-30T11:30:16.180207" elapsed="0.020500"/>
+</kw>
+<kw name="Validar Status Code">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == ${status_code}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-09-30T11:30:16.203992" elapsed="0.000878"/>
+</kw>
+<arg>201</arg>
+<status status="PASS" start="2025-09-30T11:30:16.201796" elapsed="0.003190"/>
+</kw>
+<kw name="Validar Se Mensagem Contem">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${response.json()['message']}</arg>
+<arg>${mensagem}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2025-09-30T11:30:16.205853" elapsed="0.000557"/>
+</kw>
+<arg>Cadastro realizado com sucesso</arg>
+<status status="PASS" start="2025-09-30T11:30:16.205455" elapsed="0.001033"/>
+</kw>
+<tag>POST</tag>
+<status status="PASS" start="2025-09-30T11:30:16.177893" elapsed="0.028966"/>
+</test>
+<doc>Arquivos simples para requisições HTTP em API ServeRest</doc>
+<status status="PASS" start="2025-09-30T11:30:16.049940" elapsed="0.157826"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">POST</stat>
+</tag>
+<suite>
+<stat name="Base" id="s1" pass="1" fail="0" skip="0">Base</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

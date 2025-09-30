@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-18T10:02:54.149241" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\CursoUdemy\robotFramework\WebTesting\amazon_testes.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="10">
@@ -128,6 +129,580 @@ e verifica a categoria Computadores e Informática</doc>
 </tag>
 <suite>
 <stat name="Amazon Testes" id="s1" pass="1" fail="0" skip="0">Amazon Testes</stat>
+=======
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-30T00:36:40.869290" rpa="false" schemaversion="5">
+<suite id="s1" name="Base" source="C:\Users\James\TrilhaRobotFramework\base.robot">
+<test id="s1-t1" name="Cenario: GET Todos os Usuarios 200" line="14">
+<kw name="Criar Sessao">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:41.064510" level="INFO">Creating Session using : alias=ServeRest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>ServeRest</arg>
+<arg>https://serverest.dev</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-09-30T00:36:41.063909" elapsed="0.001233"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:41.062655" elapsed="0.003790"/>
+</kw>
+<kw name="GET Endpoint / usuarios">
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:42.368235" level="INFO">GET Request : url=https://serverest.dev/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-09-30T00:36:42.368660" level="INFO">GET Response : url=https://serverest.dev/usuarios 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': '3c88fcfd29affcc91b20db0866739ef6;o=1', 'date': 'Tue, 30 Sep 2025 03:36:36 GMT', 'server': 'Google Frontend', 'Content-Length': '220039'} 
+ body={
+    "quantidade": 991,
+    "usuarios": [
+        {
+            "nome": "Dr. Wade Sipes",
+            "email": "Eileen.Pfannerstill@teste.com",
+            "password": "8yehwsyxsrnMEGw",
+            "administrador": "true",
+            "_id": "09v3I7xBogBmzYxW"
+        },
+        {
+            "nome": "Terry Crews Moanah",
+            "email": "user_1759154124_426@example.com",
+            "password": "HED3Jpq3ER9qh8",
+            "administrador": "true",
+            "_id": "0OVryhMihays8aEb"
+        },
+        {
+            "nome": "Cypress Admin 1759148461782",
+            "email": "cypress_admin_1759148461782@cypress.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "0Ozs1BvU9RIkFLmV"
+        },
+        {
+            "nome": "Updated Test User",
+            "email": "njwdmg@testapi.com",
+            "password": "newpassword456",
+            "administrador": "false",
+            "_id": "0TfYNxZn7sJodIQQ"
+        },
+        {
+            "nome": "Muriel Schinner I",
+            "email": "Orpha.Pollich@hotmail.com",
+            "password": "1234",
+            "administrador": "true",
+            "_id": "0dfcfMKThXXgwXaD"
+        },
+        {
+            "nome": "Msgr. Earle Considine",
+            "email": "user_1759154081_739@example.com",
+            "password": "vKxYtm9Kuq0lgq4",
+            "administrador": "true",
+            "_id": "0exPrwGsXXWeqkI4"
+        },
+        {
+            "nome": "Eryn.Wiegand38",
+            "email": "Rosanna.Dibbert8@yahoo.com",
+            "password": "787680319",
+            "administrador": "false",
+            "_id": "0ne8EP7tqEUOepKE"
+        },
+        {
+            "nome": "Fulano da Bonga",
+            "email": "beltranobolas@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Teste Alteraçãoo",
+            "email": "Emailbrabo@email.com",
+            "password": "150",
+            "administrador": "false",
+            "_id": "0x3fgQjH2oeOPFuy"
+        },
+        {
+            "nome": "Henderson",
+            "email": "Carlie81@yahoo.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0x8g7en9H5RHlcX6"
+        },
+        {
+            "nome": "Allan  Rocha",
+            "email": "ands4@qa.com.br",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "0yUtOFYaXhzzxxQI"
+        },
+        {
+            "nome": "Miss Sarah Franey",
+            "email": "Wellington.Miller18@hotmail.com",
+            "password": "gqfprHfnDeORmSM",
+            "administrador": "false",
+            "_id": "11wjBGAgQ586kbWX"
+        },
+        {
+            "nome": "Usuario Invalido",
+            "email": "qa_7a87043b-47ad-4192-909d-7e3b769b9024@test.com",
+            "password": "te",
+            "administrador": "true",
+            "_id": "15sfzn7xTJvZshQ6"
+        },
+        {
+            "nome": "Updated Test User",
+            "email": "lnfdyy@testapi.com",
+            "password": "newpassword456",
+            "administrador": "false",
+            "_id": "1BVUQGCqGOkeJk0Y"
+        },
+        {
+            "nome": "Tanya Hirthe",
+            "email": "{{$randomFirstName}}{{$randomLastName}}@example.com",
+            "password": "adm123",
+            "administrador": "true",
+            "_id": "1CvKFT8pT0JH4e96"
+        },
+        {
+            "nome": "Ladarius.Kunde",
+            "email": "Kirk_Funk55@gmail.com",
+            "password": "605932100",
+            "administrador": "true",
+            "_id": "1Ff1Yc7M7HJ4duiY"
+        },
+        {
+            "nome": "Usuario Teste Auth",
+            "email": "auth.test.1759154105468@qa.com",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "1KsaRFWuzp04LlL9"
+        },
+        {
+            "nome": "Usuário Admin",
+            "email": "usuario.admin@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "1P4Ur8Hi580BPnlB"
+        },
+        {
+            "nome": "Login Test User",
+            "email": "login.1759183922024@qa.com.br",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "1PIenU9AJjYnLhBU"
+        },
+        {
+            "nome": "Cypress Admin 1759148457482",
+            "email": "cypress_admin_1759148457482@cypress.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1R36yOSQNr3riDMv"
+        },
+        {
+            "nome": "Usuário Teste",
+            "email": "teste7603@teste.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "1TZQ4YCneWFKyMUT"
+        },
+        {
+            "nome": "testando",
+            "email": "testando@testando.com.br",
+            "password": "963963",
+            "administrador": "false",
+            "_id": "1ToYCxvhkFSbylPf"
+        },
+        {
+            "nome": "Leandro",
+            "email": "leandro@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "1WEnxcoxDCfqwkX7"
+        },
+        {
+            "nome": "Camila",
+            "email": "camila.1759152056186@teste.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1mTG23ntmJmKeAxW"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "27mnjbsElZgZgiRg"
+        },
+        {
+            "nome": "Usuário Teste",
+            "email": "teste5158@teste.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "2BZtVzKkaDdmBX23"
+        },
+        {
+            "nome": "Usuario Teste Auth",
+            "email": "auth.test.1759154943267@qa.com",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "2Ffkm3ZUlqnucE4F"
+        },
+        {
+            "nome": "Stacey Hermiston",
+            "email": "Barton.Fadel@yahoo.com",
+            "password": "2sHrxoHgpf0hMb2",
+            "administrador": "false",
+            "_id": "2NMs8STLrOnU5wDN"
+        },
+        {
+            "nome": "Ghost User",
+            "email": "ghost.1759184356885@qa.com.br",
+            "password": "invisivel",
+            "administrador": "false",
+            "_id": "2VDt4fP3jzmvdTfC"
+        },
+        {
+            "nome": "Zetta_Robel",
+            "email": "Randall_Batz-Swift72@hotmail.com",
+            "password": "056418625",
+            "administrador": "true",
+            "_id": "2YOTfPcfJbKAYz5x"
+        },
+        {
+            "nome": "Common User",
+            "email": "nonadmin.1759184794583@qa.com.br",
+            "password": "senha",
+            "administrador": "false",
+            "_id": "2hPqnm6cv01F47fO"
+        },
+        {
+            "nome": "Joaquina Magalhães",
+            "email": "quina@qmail.com.br",
+            "password": "12345678",
+            "administrador": "false",
+            "_id": "2mpVSdCIQN4sCUZr"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "qa_4623cd44-2789-4c17-8915-3f00a87f01d8@test.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "2z27BggRkMO4hl0a"
+        },
+        {
+            "nome": "Usuário Teste",
+            "email": "teste6743@teste.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "30X41ObYYBGcHimV"
+        },
+        {
+            "nome": "John",
+            "email": "johnafec0f@example.com",
+            "password": "123456",
+            "administrador": "false",
+            "_id": "340VH3zrRZsGnB6A"
+        },
+        {
+            "nome": "Usuario Teste Auth",
+            "email": "auth.test.1759154272341@qa.com",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "3Gvqh0zhK6TTOyfg"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "vale9@qa.com.br",
+            "password": "0",
+            "administrador": "true",
+            "_id": "3HGzZo6GsCUSW1Hi"
+        },
+        {
+            "nome": "Todd MacGyver",
+            "email": "Lamont75@gmail.com",
+            "password": "cpU7biZ2VBPL_FP",
+            "administrador": "true",
+            "_id": "3HeeajGVASmXQyP7"
+        },
+        {
+            "nome": "Usuario QA",
+            "email": "qa_9c83722f-b2a3-49bb-ab33-7ed8141669b5@test.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "3J9GJGxqtZW2CQEs"
+        },
+        {
+            "nome": "Ceola Hettinger",
+            "email": "user_1759154197_882@example.com",
+            "password": "2b5Ofw1cvHcRi",
+            "administrador": "true",
+            "_id": "3LSbsI1lorAdMwsq"
+        },
+        {
+            "nome": "Usuario QA",
+            "email": "qa_8057d812-25a4-4860-b520-2e848839f33f@test.com",
+            "password": "12345",
+            "administrador": "true",
+            "_id": "3NDEhU2sE07ikhx4"
+        },
+        {
+            "nome": "Updated Test User",
+            "email": "fmfcso@testapi.com",
+            "password": "newpassword456",
+            "administrador": "false",
+            "_id": "3QD8r1NJ59zT0sBu"
+        },
+        {
+            "nome": "User B",
+            "email": "userB.1759193863107@qa.com.br",
+            "password": "def",
+            "administrador": "true",
+            "_id": "3QmGwlzKLPyBhKZS"
+        },
+        {
+            "nome": "Login Test User",
+            "email": "login.1759193877904@qa.com.br",
+            "password": "teste123",
+            "administrador": "true",
+            "_id": "3WHAPTqneuS0ma8L"
+        },
+        {
+            "nome": "Camila",
+            "email": "camila.1759152097526@teste.com",
+            "password": "123456",
+            "administrador":... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2025-09-30T00:36:42.369151" level="INFO">C:\Users\James\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-09-30T00:36:42.369496" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>ServeRest</arg>
+<arg>/usuarios</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-09-30T00:36:41.067930" elapsed="1.301646"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-30T00:36:42.370052" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.369783" elapsed="0.000336"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:41.067407" elapsed="1.302807"/>
+</kw>
+<kw name="Validar Status Code 200" source_name="Validar Status Code ${status_code}">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == ${status_code}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.370935" elapsed="0.001512"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.370606" elapsed="0.002018"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:41.061729" elapsed="1.311432"/>
+</test>
+<test id="s1-t2" name="Cenario: POST Cadastrar Usuario 201" line="19">
+<kw name="Criar Sessao">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:42.374986" level="INFO">Creating Session using : alias=ServeRest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>ServeRest</arg>
+<arg>https://serverest.dev</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-09-30T00:36:42.374806" elapsed="0.000420"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.374434" elapsed="0.000902"/>
+</kw>
+<kw name="POST Endpoint / usuarios">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-30T00:36:42.376372" level="INFO">&amp;{payload} = { nome=ja priestt | email=tesoiulll@gmail.com | password=123 | administrador=true }</msg>
+<var>&amp;{payload}</var>
+<arg>nome=ja priestt</arg>
+<arg>email=tesoiulll@gmail.com</arg>
+<arg>password=123</arg>
+<arg>administrador=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.375990" elapsed="0.000439"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:42.744582" level="INFO">POST Request : url=https://serverest.dev/usuarios 
+ path_url=/usuarios 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '75', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=nome=ja+priestt&amp;email=tesoiulll%40gmail.com&amp;password=123&amp;administrador=true 
+ </msg>
+<msg time="2025-09-30T00:36:42.744828" level="INFO">POST Response : url=https://serverest.dev/usuarios 
+ status=201, reason=Created 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': '7a6bc5d1a11c1b4bb90f1c7c0fb9ab81', 'date': 'Tue, 30 Sep 2025 03:36:37 GMT', 'server': 'Google Frontend', 'Content-Length': '82'} 
+ body={
+    "message": "Cadastro realizado com sucesso",
+    "_id": "pM77zvhUj14pDnPh"
+} 
+ </msg>
+<msg time="2025-09-30T00:36:42.745042" level="INFO">C:\Users\James\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-09-30T00:36:42.745453" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>ServeRest</arg>
+<arg>/usuarios</arg>
+<arg>data=&amp;{payload}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.376586" elapsed="0.368979"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.745927" elapsed="0.001347"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-30T00:36:42.748060" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.747618" elapsed="0.000575"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.375687" elapsed="0.372725"/>
+</kw>
+<kw name="Validar Status Code 201" source_name="Validar Status Code ${status_code}">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == ${status_code}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.749495" elapsed="0.001123"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.748987" elapsed="0.001748"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.373891" elapsed="0.377210"/>
+</test>
+<test id="s1-t3" name="Cenario: PUT Editar Usuario 200" line="24">
+<kw name="Criar Sessao">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:42.752955" level="INFO">Creating Session using : alias=ServeRest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>ServeRest</arg>
+<arg>https://serverest.dev</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-09-30T00:36:42.752794" elapsed="0.000371"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.752481" elapsed="0.000791"/>
+</kw>
+<kw name="PUT Endpoint / usuarios">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2025-09-30T00:36:42.754211" level="INFO">&amp;{payload} = { nome=jer priestt | email=teiprewaslll@gmail.com | password=123 | administrador=true }</msg>
+<var>&amp;{payload}</var>
+<arg>nome=jer priestt</arg>
+<arg>email=teiprewaslll@gmail.com</arg>
+<arg>password=123</arg>
+<arg>administrador=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.753898" elapsed="0.000372"/>
+</kw>
+<kw name="PUT On Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:43.114505" level="INFO">PUT Request : url=https://serverest.dev/usuarios/ZjZmyZpay2HtAUsM 
+ path_url=/usuarios/ZjZmyZpay2HtAUsM 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '79', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=nome=jer+priestt&amp;email=teiprewaslll%40gmail.com&amp;password=123&amp;administrador=true 
+ </msg>
+<msg time="2025-09-30T00:36:43.114862" level="INFO">PUT Response : url=https://serverest.dev/usuarios/ZjZmyZpay2HtAUsM 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': '52d3b21b852dfe8e72927a1be241140f', 'date': 'Tue, 30 Sep 2025 03:36:38 GMT', 'server': 'Google Frontend', 'Content-Length': '50'} 
+ body={
+    "message": "Registro alterado com sucesso"
+} 
+ </msg>
+<msg time="2025-09-30T00:36:43.115207" level="INFO">C:\Users\James\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-09-30T00:36:43.116045" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>ServeRest</arg>
+<arg>/usuarios/ZjZmyZpay2HtAUsM</arg>
+<arg>data=&amp;{payload}</arg>
+<doc>Sends a PUT request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-09-30T00:36:42.754459" elapsed="0.361834"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-30T00:36:43.117081" elapsed="0.001895"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-30T00:36:43.120131" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-30T00:36:43.119484" elapsed="0.000836"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.753595" elapsed="0.366994"/>
+</kw>
+<kw name="Validar Status Code 200" source_name="Validar Status Code ${status_code}">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == ${status_code}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-09-30T00:36:43.122097" elapsed="0.001586"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:43.121468" elapsed="0.002609"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:42.751937" elapsed="0.372961"/>
+</test>
+<test id="s1-t4" name="Cenario: DELETE Usuario 200" line="29">
+<kw name="Criar Sessao">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:43.127923" level="INFO">Creating Session using : alias=ServeRest, url=https://serverest.dev, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>ServeRest</arg>
+<arg>https://serverest.dev</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2025-09-30T00:36:43.127645" elapsed="0.000705"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:43.127194" elapsed="0.001472"/>
+</kw>
+<kw name="DELETE Endpoint / usuarios">
+<kw name="DELETE On Session" owner="RequestsLibrary">
+<msg time="2025-09-30T00:36:44.868042" level="INFO">DELETE Request : url=https://serverest.dev/usuarios/ZjZmyZpay2HtAUsM 
+ path_url=/usuarios/ZjZmyZpay2HtAUsM 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
+ body=None 
+ </msg>
+<msg time="2025-09-30T00:36:44.868687" level="INFO">DELETE Response : url=https://serverest.dev/usuarios/ZjZmyZpay2HtAUsM 
+ status=200, reason=OK 
+ headers={'access-control-allow-origin': '*', 'x-dns-prefetch-control': 'off', 'x-frame-options': 'SAMEORIGIN', 'strict-transport-security': 'max-age=15552000; includeSubDomains', 'x-download-options': 'noopen', 'x-content-type-options': 'nosniff', 'x-xss-protection': '1; mode=block', 'content-type': 'application/json; charset=utf-8', 'x-cloud-trace-context': '104ad6b8f6bc1f6e5e20d81274e352c3', 'date': 'Tue, 30 Sep 2025 03:36:39 GMT', 'server': 'Google Frontend', 'Content-Length': '51'} 
+ body={
+    "message": "Registro excluído com sucesso"
+} 
+ </msg>
+<msg time="2025-09-30T00:36:44.869067" level="INFO">C:\Users\James\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'serverest.dev'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2025-09-30T00:36:44.869753" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>ServeRest</arg>
+<arg>/usuarios/ZjZmyZpay2HtAUsM</arg>
+<doc>Sends a DELETE request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2025-09-30T00:36:43.132605" elapsed="1.737313"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Response: ${response.content}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-09-30T00:36:44.870267" elapsed="0.003128"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2025-09-30T00:36:44.874481" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<arg>${response}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2025-09-30T00:36:44.873914" elapsed="0.000723"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:43.131017" elapsed="1.743797"/>
+</kw>
+<kw name="Validar Status Code 200" source_name="Validar Status Code ${status_code}">
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${response.status_code} == ${status_code}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-09-30T00:36:44.876768" elapsed="0.001521"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:44.875785" elapsed="0.002706"/>
+</kw>
+<status status="PASS" start="2025-09-30T00:36:43.126336" elapsed="1.752720"/>
+</test>
+<doc>Arquivos simples para requisições HTTP em API ServeRest</doc>
+<status status="PASS" start="2025-09-30T00:36:40.874909" elapsed="4.006484"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Base" id="s1" pass="4" fail="0" skip="0">Base</stat>
+>>>>>>> ab59271 (Exercicios feitos durante as aulas)
 </suite>
 </statistics>
 <errors>
