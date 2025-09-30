@@ -5,7 +5,7 @@ Documentation       Keywords e Variaveis para Ações do Endpoint /usuarios
 *** Variables ***
 ${nome_do_usuario}        herbert richards 
 ${senha_do_usuario}       teste123
-${email_do_usuario}       testestesteste@gmail.com 
+${email_do_usuario}       testestesteste@qa.com.br
 
 *** Keywords *** 
 GET Endpoint /usuarios
@@ -20,7 +20,7 @@ POST Endpoint /usuarios
     Set Global Variable     ${response}
 
 PUT Endpoint /usuarios
-    &{payload}          Create Dictionary    nome=jer priestt  email=teiprewaslll@gmail.com   password=123    administrador=true
+    &{payload}          Create Dictionary    nome=jer priestt  email=teiprewaslll@gmail.com       password=123    administrador=true
     ${response}         PUT On Session    ServeRest    /usuarios/ZjZmyZpay2HtAUsM    data=&{payload}
     Log To Console      Response: ${response.content}
     Set Global Variable     ${response}      

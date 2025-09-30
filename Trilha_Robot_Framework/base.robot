@@ -3,7 +3,8 @@
 Documentation   Arquivos simples para requisições HTTP em API ServeRest 
 Library         RequestsLibrary
 Resource        ./usuarios_keywords.robot
-
+Resource        ./login_keywords.robot
+Resource        ./produtos_keywords.robot
 
 
 #Sessão para criação dos casos de testes
@@ -35,6 +36,18 @@ Cenario: DELETE Usuario 200
     DELETE Endpoint /usuarios
     # Validar Status Code 200
 
+Cenario: POST Realizar Login 200
+    [tags]       POSTLOGIN
+    Criar Sessao
+    POST Endpoint /login 
+    Validar Status Code  200
+
+Cenario: POST Criar Produto 201
+    [tags]      POSTPRODUTO
+    Criar Sessao 
+    POST Endpoit /produtos
+    # Validar Status Code "201"
+
 #Sessão para criação de Keywords Personalizada s
 *** Keywords ***
 Criar Sessao
@@ -46,7 +59,7 @@ GET Endpoint /usuarios
 
 
 POST Endpoint /usuarios
-    &{payload}          Create Dictionary    nome={nome_do_usuario}  email={email_do_usuario}   password=123    administrador=true
+    &{payload}          Create Dictionary    nome=Bell  email=belt@qa.com.br   password=teste    administrador=true
     ${response}         POST On Session    ServeRest    /usuarios    data=&{payload}
     Log To Console      Response: ${response.content}
     Set Global Variable     ${response}
