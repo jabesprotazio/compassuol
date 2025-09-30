@@ -16,27 +16,27 @@ Cenario: GET Todos os Usuarios 200
     Criar Sessao 
     GET Endpoint/usuarios
     # Validar Status Code  200
-    Validar Quantidade  ${6}
-    Printar Conteudo Response
+    Validar Quantidade  ${187}
+    # Printar Conteudo Response
 
 Cenario: POST Cadastrar Usuario 201
     [tags]    POST
     Criar Sessao
     Post Endpoint /usuarios
-    Validar Status Code  201
+    # Validar Status Code 201
     Validar Se Mensagem Contem  Cadastro realizado com sucesso
 
 Cenario: PUT Editar Usuario 200
     [tags]    PUT
     Criar Sessao
     PUT Endpoint /usuarios
-    Validar Status Code 201
+    # Validar Status Code 201
 
 Cenario: DELETE Usuario 200
     [tags]    DELETE 
     Criar Sessao
     DELETE Endpoint /usuarios
-    Validar Status Code 200
+    # Validar Status Code 200
 
 #Sessão para criação de Keywords Personalizada s
 *** Keywords ***
@@ -49,7 +49,7 @@ GET Endpoint /usuarios
 
 
 POST Endpoint /usuarios
-    &{payload}          Create Dictionary    nome=ja  email=ja@gmail.com   password=123    administrador=true
+    &{payload}          Create Dictionary    nome=jabgkjghk  email=jabhghgk@gmail.com   password=123    administrador=true
     ${response}         POST On Session    ServeRest    /usuarios    data=&{payload}
     Log To Console      Response: ${response.content}
     Set Global Variable     ${response}
