@@ -45,8 +45,18 @@ Cenario: POST Realizar Login 200
 Cenario: POST Criar Produto 201
     [tags]      POSTPRODUTO
     Criar Sessao 
+    Fazer Login e Armazenar Token
     POST Endpoit /produtos
-    # Validar Status Code "201"
+    Validar Status Code  201
+
+Cenario: DELETE Excluir Produto 200
+    [tags]      DELETEPRODUTO
+    Criar Sessao 
+    Fazer Login e Armazenar Token
+    Criar Um Produto e Armazenar ID
+    DELETE Endpoint /produtos
+    Validar Status Code  200
+
 
 #Sessão para criação de Keywords Personalizada s
 *** Keywords ***
@@ -71,7 +81,7 @@ PUT Endpoint /usuarios
     Set Global Variable     ${response}      
 
 DELETE Endpoint /usuarios
-    ${response}               DELETE On Session   ServeRest    /usuarios/ZjZmyZpay2HtAUsM
+    ${response}               DELETE On Session   ServeRest    /usuarios/{id_usuario}
     Log To Console            Response: ${response.content}
     Set Global Variable       ${response}
 
