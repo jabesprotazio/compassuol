@@ -64,6 +64,8 @@ Consultar os dados do novo usuário
     Log   ${resposta_consulta.json()}
 
 
+
+
     Set Test Variable     ${RESP_CONSULTA}   ${resposta_consulta.json()}
 
 Conferir os dados do novo usuário 
