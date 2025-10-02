@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-09-18T15:21:31.207621" rpa="false" schemaversion="5">
+<suite id="s1" name="Amazon Testes" source="C:\CursoUdemy\robotFramework\WebTesting\amazon_testes.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="10">
+<kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-18T15:21:31.718685" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-18T15:21:31.718382" elapsed="8.015905"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-18T15:21:39.735370" elapsed="0.007535"/>
+</kw>
+<status status="PASS" start="2025-09-18T15:21:31.717568" elapsed="8.025663"/>
+</kw>
+<kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-09-18T15:21:39.745234" level="INFO">Opening url 'https://www.amazon.com.br/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-09-18T15:21:39.744770" elapsed="3.193359"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MENU_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-18T15:21:42.938780" elapsed="0.574398"/>
+</kw>
+<status status="PASS" start="2025-09-18T15:21:39.744074" elapsed="3.769414"/>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;" owner="amazon_resources" source_name="Verificar se o título da página fica &quot;${TITULO}&quot;">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-18T15:21:43.524155" level="INFO">Page title is 'Amazon.com.br | Tudo pra você, de A a Z.'.</msg>
+<arg>title=${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-18T15:21:43.519055" elapsed="0.005241"/>
+</kw>
+<status status="PASS" start="2025-09-18T15:21:43.517981" elapsed="0.006475"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-09-18T15:21:43.527761" level="INFO">Clicking element '//a[contains(text(),'Eletrônicos')]'.</msg>
+<arg>${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-18T15:21:43.527282" elapsed="3.274744"/>
+</kw>
+<status status="PASS" start="2025-09-18T15:21:43.526501" elapsed="3.275721"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${FRASE}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-09-18T15:21:46.803341" elapsed="0.165189"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${HEADER_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-09-18T15:21:46.968952" elapsed="0.342113"/>
+</kw>
+<status status="PASS" start="2025-09-18T15:21:46.802808" elapsed="0.508497"/>
+</kw>
+<kw name="Verificar se o título da página fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="amazon_resources" source_name="Verificar se o título da página fica &quot;${TITULO}&quot;">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-18T15:21:47.330137" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
+<arg>title=${TITULO}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-18T15:21:47.312863" elapsed="0.017548"/>
+</kw>
+<status status="PASS" start="2025-09-18T15:21:47.312227" elapsed="0.018467"/>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Computadores e Informática&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2025-09-18T15:21:47.580744" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-18T15:21:47.581283" level="FAIL">MoveTargetOutOfBoundsException: Message: Move target (746, 765) is out of bounds of viewport dimensions (1280, 587)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3122:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:187:42
+</msg>
+<arg>//span[contains(text(),'Navegue por categoria')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2025-09-18T15:21:47.332634" elapsed="0.256671">MoveTargetOutOfBoundsException: Message: Move target (746, 765) is out of bounds of viewport dimensions (1280, 587)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3122:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:187:42
+</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>locator=//span[@class='a-size-base-plus'][normalize-space()='${NOME_CATEGORIA}']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2025-09-18T15:21:47.589570" elapsed="0.000042"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${BUTTON_MOVE_CATEGORY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-09-18T15:21:47.589740" elapsed="0.000032"/>
+</kw>
+<status status="FAIL" start="2025-09-18T15:21:47.331694" elapsed="0.258260">MoveTargetOutOfBoundsException: Message: Move target (746, 765) is out of bounds of viewport dimensions (1280, 587)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3122:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:187:42
+</status>
+</kw>
+<kw name="Verificar se aparece a categoria &quot;Tablets&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
+<status status="NOT RUN" start="2025-09-18T15:21:47.590337" elapsed="0.000053"/>
+</kw>
+<kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-18T15:21:47.754245" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-18T15:21:47.591285" elapsed="0.163329"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-18T15:21:47.754854" elapsed="5.311934"/>
+</kw>
+<status status="PASS" start="2025-09-18T15:21:47.590827" elapsed="5.476162"/>
+</kw>
+<doc>Esse teste verifica o menu "Eletrônicos" do site Amazon.com.br
+e verifica a categoria Computadores e Informática</doc>
+<tag>categorias</tag>
+<tag>menus</tag>
+<status status="FAIL" start="2025-09-18T15:21:31.715928" elapsed="21.351835">MoveTargetOutOfBoundsException: Message: Move target (746, 765) is out of bounds of viewport dimensions (1280, 587)
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+MoveTargetOutOfBoundsError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:521:5
+assertTargetInViewPort@chrome://remote/content/shared/webdriver/Actions.sys.mjs:3122:11
+#assertInViewPort@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:67:17
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.sys.mjs:187:42
+</status>
+</test>
+<doc>Essa suite testa o site da Amazon.com.br</doc>
+<status status="FAIL" start="2025-09-18T15:21:31.209939" elapsed="21.859746"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">categorias</stat>
+<stat pass="0" fail="1" skip="0">menus</stat>
+</tag>
+<suite>
+<stat name="Amazon Testes" id="s1" pass="0" fail="1" skip="0">Amazon Testes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

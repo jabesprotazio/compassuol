@@ -1,0 +1,26 @@
+{
+    "user_valido":{
+        "nome": "Usuario de Teste",
+        "email": "fulanosilvioa@qa.com" ,
+        "password": "teste",
+        "administrador": "true"
+    },
+    "user_invalido":{
+        "nome": "Usuario Invalido",
+        "email": "fulano@qa.com",
+        "password": "teste",
+        "administrador": "true"
+    },
+    "user_sem_senha":{
+        "nome": "Arnold Scwarz",
+        "email": "jadas@gmail.com",
+        "password": "",
+        "administrador": "true"
+    },
+    "user_sem_email":{  
+        "nome": "Joshua Harb",
+        "email": "",
+        "password": "teste123",
+        "administrador": "true"
+    }
+}

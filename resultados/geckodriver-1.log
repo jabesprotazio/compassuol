@@ -1,0 +1,20 @@
+1758218955809	geckodriver	INFO	Listening on 127.0.0.1:54369
+1758218958925	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54370" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\James\\AppData\\Local\\Temp\\rust_mozprofileqvH1CN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1758218959814	Marionette	INFO	Marionette enabled
+1758218960035	Marionette	INFO	Listening on port 54487
+WebDriver BiDi listening on ws://127.0.0.1:54370
+Read port: 54487
+1758218960374	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.amazon.com.br/, line 4181: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics, line 5770: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1758218973904	Marionette	INFO	Stopped listening on port 54487
+Dynamically enable window occlusion 1
+console.error: (new TypeError("NetworkError when attempting to fetch resource.", "resource://gre/modules/AsyncShutdown.sys.mjs", 569))
+console.error: (new Error("OHTTP was configured for https://ads.mozilla.org/v1/delete_user but we couldn't fetch a valid config", "moz-src:///browser/modules/ContextId.sys.mjs", 234))
+JavaScript error: resource://gre/modules/ObliviousHTTP.sys.mjs, line 105: NS_ERROR_XPC_CANT_CONVERT_PRIMITIVE_TO_ARRAY: Cannot convert primitive JavaScript value into an array arg 2 [nsIObliviousHttpService.newChannel]
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-settings/RemoteSettingsClient.sys.mjs, line 102: Error: Unknown callback
