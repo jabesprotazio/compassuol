@@ -27,7 +27,3 @@ Criar Um Produto e Armazenar ID
     ${id_produto}        Set Variable        ${response.json()["_id"]}
     Log To Console      ID do Produto Salvo:     ${id_produto}
     Set Global Variable    ${id_produto}
-
-Validar Status Code  ${status_code}
-    [Arguments]       ${status_code}
-    Should Be True    ${response.status_code} == ${status_code}

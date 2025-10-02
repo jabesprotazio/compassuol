@@ -5,7 +5,7 @@ Library         RequestsLibrary
 Resource        ./usuarios_keywords.robot
 Resource        ./login_keywords.robot
 Resource        ./produtos_keywords.robot
-
+Resource        ./common.robot
 
 #Sessão para criação dos casos de testes
 *** Test Cases ***
@@ -55,47 +55,16 @@ Cenario: DELETE Excluir Produto 200
     Fazer Login e Armazenar Token
     Criar Um Produto e Armazenar ID
     DELETE Endpoint /produtos
-    Validar Status Code  200
+    Validar Status Code 200
 
+Cenario: POST Criar Usuario De Massa Estatica 201
+    [tags]      POSTMASSAESTATICA
+    Criar Sessao 
+    Criar usuario Estatico Valido
+    Validar Status Code  201
+    
 
 #Sessão para criação de Keywords Personalizada s
 *** Keywords ***
 Criar Sessao
     Create Session    ServeRest    https://serverest.dev
-
-GET Endpoint /usuarios
-    ${response}      GET On Session    ServeRest    /usuarios
-    Set Global Variable   ${response}
-
-
-POST Endpoint /usuarios
-    &{payload}          Create Dictionary    nome=Bell  email=belt@qa.com.br   password=teste    administrador=true
-    ${response}         POST On Session    ServeRest    /usuarios    data=&{payload}
-    Log To Console      Response: ${response.content}
-    Set Global Variable     ${response}
-
-PUT Endpoint /usuarios
-    &{payload}          Create Dictionary    nome=jer priestt  email=teiprewaslll@gmail.com   password=123    administrador=true
-    ${response}         PUT On Session    ServeRest    /usuarios/ZjZmyZpay2HtAUsM    data=&{payload}
-    Log To Console      Response: ${response.content}
-    Set Global Variable     ${response}      
-
-DELETE Endpoint /usuarios
-    ${response}               DELETE On Session   ServeRest    /usuarios/{id_usuario}
-    Log To Console            Response: ${response.content}
-    Set Global Variable       ${response}
-
-Validar Status Code
-    [Arguments]       ${status_code}
-    Should Be True    ${response.status_code} == ${status_code}       
-
-Validar Quantidade
-    [Arguments]       ${quantidade}
-    Should Be Equal      ${response.json()['quantidade']}       ${quantidade}
-
-Validar Se Mensagem Contem
-    [Arguments]       ${mensagem}
-    Should Be Equal      ${response.json()['message']}       ${mensagem}  
-
-Printar Conteudo Response
-    Log To Console      Response: ${response.json()[]}

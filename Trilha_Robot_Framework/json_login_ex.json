@@ -11,7 +11,7 @@
         "email": "sem_senha@qa.com",
         "password": ""
     },
-    "user_sem_email":{
+    "user_sem_email":{  
         "email": "",
         "password": "teste"
     }
