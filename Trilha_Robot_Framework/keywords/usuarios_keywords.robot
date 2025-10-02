@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation       Keywords e Variaveis para Ações do Endpoint /usuarios
-Resource        ./common.robot
+Resource            ../support/base.robot
 
 *** Variables ***
 ${nome_do_usuario}        herbert richards 
@@ -9,6 +9,7 @@ ${email_do_usuario}       testestesteste@qa.com.br
 
 *** Keywords *** 
 GET Endpoint /usuarios
+    [Tags]    GET
     ${response}      GET On Session    ServeRest    /usuarios
     Set Global Variable   ${response}
 
@@ -41,8 +42,13 @@ Validar Se Mensagem Contem
 Printar Conteudo Response
     Log To Console      Response: ${response.json()["usuarios"][2]["identificacao"]["RG"]}
 
-Criar usuario Estatico Valido
+Cadastrar Usuario Estatico Valido
     ${json}                  Importar JSON Estatico      json_usuario_ex.json
     ${payload}               Set Variable      ${json["user_valido"]}  
+    Set Global Variable      ${payload}
+    POST Endpoint /usuarios
+
+Cadastrar Usuario Dinamico Valido 
+    ${payload}      Criar dados Usuario Valido
     Set Global Variable      ${payload}
     POST Endpoint /usuarios
