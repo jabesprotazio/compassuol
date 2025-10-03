@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   Arquivo de Testes para Endpoint /produtos
-
+Resource        ../keywords/produtos_keywords.robot
 
 
 

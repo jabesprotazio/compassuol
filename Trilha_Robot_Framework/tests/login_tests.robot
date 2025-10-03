@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation   Arquivo de Testes para Endpoint /login
-Resource        ../support/base.robot
+Resource        ../keywords/login_keywords.robot
 
 
 

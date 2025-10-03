@@ -1,7 +1,7 @@
 {
     "user_valido":{
-        "nome": "Usuario de Teste",
-        "email": "fulanosilvioa@qa.com" ,
+        "nome": "Usuario de Testes",
+        "email": "fulanlvioa@qa.com" ,
         "password": "teste",
         "administrador": "true"
     },

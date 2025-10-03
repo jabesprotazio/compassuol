@@ -4,9 +4,9 @@ Documentation   Arquivos simples para requisições HTTP em API ServeRest
 Library         RequestsLibrary
 Library         Collections
 Library         OperatingSystem
-Resource        ./support/common/common.robot
-Resource        ./support/fixtures/dynamics.robot
-Resource        ./Variaveis/serverest_variaveis.robot
+Resource        ./common/common.robot
+Resource        ./fixtures/dynamics.robot
+Resource        ./variaveis/serverest_variaveist.robot
 
 #Sessão para criação de Keywords Personalizada s
 *** Keywords ***
