@@ -29,6 +29,7 @@ Cenario: PUT Editar Usuario 200
     PUT Endpoint /usuarios
     Validar Status Code  200
 
+
 Cenario: DELETE Deletar Usuario 200
     [tags]    DELETE 
     Criar Dados Usuario Valido
