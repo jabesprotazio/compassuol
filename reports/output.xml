@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.7 on win32)" generated="2025-10-06T11:12:48.871895" rpa="false" schemaversion="5">
+<suite id="s1" name="Consumir Library Python" source="C:\Users\James\TrilhaRobotFramework\Trilha_Robot_Framework\consumir_library_python.robot">
+<test id="s1-t1" name="Teste Library 1" line="8">
+<kw name="Get Endpoint Usuarios Tantas Vezes" owner="library_teste">
+<msg time="2025-10-06T11:12:49.825681" level="INFO">${json} = [{'quantidade': 111, 'usuarios': [{'nome': 'Joan Ratke', 'email': 'heidicruickshank@test.com', 'password': 'Test;123', 'administrador': 'true', '_id': '0IzolhrVvVPIr8II'}, {'nome': 'Usuario Teste', 'e...</msg>
+<var>${json}</var>
+<arg>${1}</arg>
+<status status="PASS" start="2025-10-06T11:12:48.981617" elapsed="0.844151"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${json}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-10-06T11:12:49.826301" elapsed="0.001283"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:12:48.980572" elapsed="0.847440"/>
+</test>
+<test id="s1-t2" name="Teste Library 2" line="14">
+<kw name="Pegar Quantidade De Usuarios Cadastrados" owner="library_teste">
+<msg time="2025-10-06T11:12:50.624430" level="INFO">${users} = 111</msg>
+<var>${users}</var>
+<status status="PASS" start="2025-10-06T11:12:49.829201" elapsed="0.795451"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${users}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-10-06T11:12:50.626152" elapsed="0.001851"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:12:49.828645" elapsed="0.800920"/>
+</test>
+<doc>Arquivo de Testes para Library PYTHON</doc>
+<status status="PASS" start="2025-10-06T11:12:48.873798" elapsed="1.760985"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Consumir Library Python" id="s1" pass="2" fail="0" skip="0">Consumir Library Python</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
